@@ -1,24 +1,22 @@
 {
-  "name": "mind/importcustomer",
-  "description": "Magentlo2 module for import customer from command line",
-  "type": "magento2-module",
-  "version": "1.0.0",
-  "license": "GPL-3.0",
-  "authors": [
-    {
-      "name": "HAROONMIND ",
-      "email": "haroonmind@gmail.com"
+    "name": "haroonmind/importcustomer",
+    "description": "Magentlo2 module for import customer from command line",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "GPL-3.0",
+    "authors": [{
+        "name": "HAROONMIND ",
+        "email": "haroonmind@gmail.com"
+    }],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "~5.6.0|~7.1.0|~7.3.0",
+        "magento/framework": "~100.0"
+    },
+    "autoload": {
+        "files": ["registration.php"],
+        "psr-4": {
+            "Mind\\ImportCustomer\\": ""
+        }
     }
-  ],
-  "minimum-stability": "dev",
-  "require": {
-    "php": "~5.6.0|~7.1.0|~7.3.0",
-    "magento/framework": "~100.0"
-  },
-  "autoload": {
-    "files": [ "registration.php" ],
-    "psr-4": {
-      "Mind\\ImportCustomer\\": ""
-    }
-  }
 }
